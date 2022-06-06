@@ -22,7 +22,7 @@ let sequelizeOptions =
     : {};
 
 let sequelize = new Sequelize(POSTGRES_URI, sequelizeOptions);
-
+//Note on this
 module.exports = {
   db: sequelize,
   Food: food(sequelize, DataTypes),
